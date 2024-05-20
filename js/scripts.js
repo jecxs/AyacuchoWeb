@@ -29,14 +29,7 @@ window.addEventListener('DOMContentLoaded', event => {
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
 
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            rootMargin: '0px 0px -40%',
-        });
-    };
+   
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
@@ -51,25 +44,57 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Activate SimpleLightbox plugin for portfolio items
-    new SimpleLightbox({
-        elements: '#portfolio a.portfolio-box'
-    });
+
+  
     
 
 });
-function detectKey(event) {
-    // Verificar si se presionó "Ctrl -" (keyCode 189)
-    if (event.ctrlKey && event.keyCode === 189) {
-        // Ocultar la imagen
-        document.getElementById("deco2").style.display = "none";
-    } 
-    // Verificar si se presionó "Ctrl +" (keyCode 187)
-    else if (event.ctrlKey && event.keyCode === 187) {
-        // Mostrar la imagen nuevamente
-        document.getElementById("deco2").style.display = "block";
-    }
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('explore-button');
+    const words = ['Descubre', 'Visita', 'Conoce', 'Participa', 'Aprende', 'Siente'];
+    let currentWordIndex = 0;
 
-// Agregar un listener para el evento de teclas presionadas
-document.addEventListener("keydown", detectKey);
+    function changeButtonText() {
+        // Añadir la clase de animación
+        button.classList.add('animating');
+    
+        // Utilizar anime.js para animar el texto saliente
+        anime({
+            targets: '#explore-button span.text',
+            opacity: [1, 0],
+            duration: 500,
+            easing: 'easeInOutQuad',
+            complete: () => {
+                // Cambiar el texto una vez que el texto saliente se ha desvanecido
+                const textSpan = button.querySelector('span.text');
+                textSpan.textContent = words[currentWordIndex];
+                currentWordIndex = (currentWordIndex + 1) % words.length;
+    
+                // Utilizar anime.js para animar el texto entrante
+                anime({
+                    targets: textSpan,
+                    opacity: [0, 1],
+                    duration: 500,
+                    easing: 'easeInOutQuad',
+                    complete: () => {
+                        // Quitar la clase de animación una vez que la animación ha terminado
+                        button.classList.remove('animating');
+                    }
+                });
+            }
+        });
+    
+        // Utilizar anime.js para animar la capa deslizante
+        anime({
+            targets: '#explore-button .slide-layer',
+            translateX: ['-100%', '100%'],
+            easing: 'easeInOutQuad',
+            duration: 1000
+        });
+    }
+    
+
+    setInterval(changeButtonText, 3000); // Cambia cada 3 segundos
+});
+
+
