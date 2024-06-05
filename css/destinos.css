@@ -1,0 +1,187 @@
+/* Reset de estilos */
+html, body {
+    font-family: Arial, sans-serif;
+    background-color: #ac2d2d;
+    margin: 10px 0.5%;
+    padding: 0;
+}
+
+/* Estilos para la sección de encabezado */
+.header-section {
+    position: relative;
+    text-align: center;
+    color: white;
+
+}
+
+.artesania-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 60px;
+    font-weight: bold;
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+    font-family: "Playfair Display", serif;
+
+}
+
+.img__header {
+    height: 400px; /* Ajusté la altura para que sea más alta */
+    width: 100%;
+    object-fit: cover;
+
+}
+.contenedor-title{
+    margin-left: 270px;
+    font-family: "Playfair Display", serif;
+}
+.contenedor{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 14px;
+    padding: 40px 40px;
+    display: block!important;
+    background-color: antiquewhite;
+    border-radius: 20px;
+
+}
+
+/* Estilos para la sección de tipos */
+.historia-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.historia-title {
+    font-size: 74px;
+    font-weight: 100;
+    font-family: "Playfair Display", serif;
+    color: rgba(239, 47, 80, 0.64);
+}
+
+/* Estilos para la sección de elementos */
+.musicas-tocadas-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+}
+
+.musica-item {
+    margin-bottom: 40px;
+    margin-right: 0;
+    width: calc(20% - 50px);
+    box-sizing: border-box;
+}
+
+.duo-ayacucho-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.img-duo-ayacucho {
+    width: 400px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.94);
+    border: 5px solid rgba(168, 162, 31, 0.21);
+    transition: transform 0.1s;
+}
+
+.img-duo-ayacucho:hover {
+    transform: scale(1.15);
+}
+
+.click_enlace {
+    text-decoration: none;
+    font-family: "MS Mincho";
+    color: rgba(239, 47, 80, 0.64);
+    text-align: center;
+}
+
+/* Estilos para los modales */
+.modal-content {
+    background-color: #f8f9fa;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    width: 800px;
+    height: 850px;
+
+}
+
+.modal-title {
+    font-size: 60px;
+    color: #333;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    font-family: "Playfair Display", serif;
+
+}
+
+.modal-description {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.6em;
+    color: #555;
+
+}
+.modal-info-additional{
+    text-align: left;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5em;
+    margin: 20px 0px;
+
+  
+}
+.mapa{
+    margin-top: 25px;
+    margin-bottom: 55px;
+
+}
+
+.t-descriptivo{
+    font-family: "Lato", sans-serif;
+    margin-top: 30px;
+    font-weight: 100;
+}
+
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #6c757d;
+}
