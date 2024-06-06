@@ -1,0 +1,144 @@
+/* Reset de estilos */
+html, body {
+    font-family: Arial, sans-serif;
+    background-color: #ac2d2d;
+    margin: 10px 0.5%;
+    padding: 0;
+}
+
+
+/* Estilos para la sección de encabezado */
+.header-section {
+    position: relative;
+    text-align: center;
+
+    color: white;
+}
+
+.artesania-title {
+    position: absolute;
+    bottom: 0;
+    left:260px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+.img__header {
+    height: 300px;
+    width: 100%;
+    object-fit: cover; /* La imagen se ajustará dentro del contenedor sin distorsionar su relación de aspecto */
+    object-position: center;
+
+}
+
+
+/* Estilos para la sección de tipos */
+.historia-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.historia-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(126, 24, 63, 0.5);
+}
+
+/* Estilos para la sección de elementos */
+.musicas-tocadas-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+}
+
+.musica-item {
+    margin-bottom: 40px;
+    margin-right: 0;
+    width: calc(20% - 50px);
+    box-sizing: border-box;
+}
+
+.duo-ayacucho-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.img-duo-ayacucho {
+    width: 400px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.94);
+    border: 5px solid rgba(168, 162, 31, 0.21);
+    transition: transform 0.1s;
+}
+
+.img-duo-ayacucho:hover {
+    transform: scale(1.15);
+}
+
+.click_enlace {
+    text-decoration: none;
+    font-family: "MS Mincho";
+    color: rgba(239, 47, 80, 0.64);
+    text-align: center;
+}
+
+/* Estilos para los modales */
+.modal-content {
+    background-color: #f8f9fa;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.modal-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #6c757d;
+}
