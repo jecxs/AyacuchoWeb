@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+header {
+    position: relative; /* Añadido para que la posición de los elementos sea relativa al encabezado */
+    background-color: #333;
+    color: #fff;
+    padding: 120px; /* Aumenta el padding para hacer el encabezado más grande */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea los elementos hacia el inicio del encabezado */
+    background-image: url('https://etnias.pe/wp-content/uploads/2022/06/Adios-pueblo-de-Ayacucho_historia_Ernesto-Camassi.jpg'); /* Cambiar 'tu_imagen_fondo_transparente.png' a tu imagen de fondo transparente */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el encabezado */
+    background-position: center center; /* Ajusta la posición de la imagen de fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 48px; /* Aumenta el tamaño del título "Ayacucho" */
+    position: absolute;
+    top: 50%;
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+    transform: translateY(-50%); /* Centra verticalmente el título */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative; /* Añadido para que la posición de la imagen sea relativa al contenedor */
+}
+
+section img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    border-radius: 10px; /* Añade bordes redondeados a la imagen */
+    margin-bottom: 10px; /* Añade margen inferior para separar las imágenes */
+}
+
+/* Estilos para el álbum de imágenes */
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.album img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.album img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
