@@ -8,10 +8,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/destinos.css">
+    
     <!-- CSS de Bootstrap 5 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- JS de Bootstrap 5 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
     
     
 </head>
@@ -33,29 +43,14 @@
 
 
 
-
-
-
-
-
-
-
     <div class="hero-section">
-        <div class="overlay">
-            <h1 class="title">Destinos</h1>
-            <p class="subtitle">Ayacucho: donde cada piedra cuenta una historia y cada calle susurra tradiciones.</p>
-            <a href="#historia-container" class="btn btn-primary">Visita</a>
+        <div class="overlay"></div>
+        <div class="info">
+            <h1>Explora Huamanga</h1>
+            <p>El corazón de la Historia y la Tradición</p>
+            <a href="#historia-container">Visita</a>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
     
     <div class="contenedor">
         <h1 class="contenedor-title">Ayacucho</h1>
@@ -65,12 +60,10 @@
             Acompáñanos en este viaje virtual por Ayacucho y déjate inspirar por sus encantos. Nuestra sección de destinos es tu puerta de entrada a todo lo que esta fascinante región tiene para ofrecer.
         </h2>
     </div>
-
-
-<br>
 <div id="historia-container" class="historia-container">
     <h1 class="historia-title">Lugares más Destacados</h1>
 </div>
+
 <div class="musicas-tocadas-container">
     <!-- Primera fila de tarjetas -->
     <div class="musica-item">
@@ -181,7 +174,7 @@
             </div>
             <div class="modal-body">
                 <h5 class="modal-title" id="exampleModalLabel1">Plaza de Armas de Ayacucho</h5>
-                <img src="assets/img/portfolio/fullsize/Plaza de armas oficial.jpg" alt="Plaza de Armas">
+                <img class="modal-img" src="assets/img/portfolio/fullsize/Plaza de armas oficial.jpg" alt="Plaza de Armas">
                
                 <p class="modal-description">La Plaza de Armas es el corazón palpitante de Ayacucho, un lugar donde la historia y la modernidad se entrelazan. Rodeada de majestuosos edificios coloniales, esta plaza es un punto de encuentro tanto para los locales como para los visitantes. El imponente edificio de la Catedral de Ayacucho domina la plaza, ofreciendo un espectáculo arquitectónico digno de admirar. Pasear por la plaza es como dar un paso atrás en el tiempo, con sus calles adoquinadas y balcones de madera, mientras que los cafés y restaurantes cercanos ofrecen una muestra de la gastronomía local. Aquí puedes sentarte a descansar, tomar fotografías y sumergirte en la atmósfera única de Ayacucho.</p>
 
@@ -199,6 +192,7 @@
                 </p>
                 <div class="mapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.031998123262!2d-74.22838774039593!3d-13.160381663578272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91127df3a7751c8d%3A0x4536b91ec7771622!2sPlaza%20de%20Armas%2C%20Ayacucho%2005003!5e0!3m2!1ses-419!2spe!4v1716949159661!5m2!1ses-419!2spe" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
                 </div>
 
 
@@ -642,3 +636,45 @@
         </div>
     </div>
 </div>
+<footer class="bg-light py-5">
+    <div class="container px-4 px-lg-5">
+        <div class="row">
+            <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                <p class="text-muted">Copyright &copy; 2024 - Disque-Inges Todos los derechos reservados - Escuela Superior la Pontificia <a href="nosotros.html">autors</a></p>
+                <p class="text-muted">Dirección: Calle 123, Ayacucho, Perú</p>
+                <p class="text-muted">Teléfono: +51 123 456 789</p>
+                <p class="text-muted">Correo electrónico: info@disqueinges.com</p>
+            </div>
+            <div class="col-lg-6 text-center text-lg-end">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item me-3">
+                        <a href="#" class="text-muted">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item me-3">
+                        <a href="#" class="text-muted">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item me-3">
+                        <a href="#" class="text-muted">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item me-3">
+                        <a href="#" class="text-muted">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-muted">
+                            <i class="fab fa-youtube fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
