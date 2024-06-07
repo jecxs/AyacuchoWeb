@@ -1,0 +1,54 @@
+
+// Protected Audience API
+async function getInterestGroup(hostname, audiences, fv) {
+  const url = new URL(location.origin)
+  url.pathname = "/dsp/interest-group.json"
+  url.searchParams.set("hostname", hostname)
+  url.searchParams.set("audiences", audiences)
+  url.searchParams.set("fv", fv)
+  const res = await fetch(url)
+  return res.json()
+}
+
+function log(...params) {
+  // console.log(...params);
+}
+
+document.addEventListener("DOMContentLoaded", async (e) => {
+  if (navigator.joinAdInterestGroup === undefined) {
+    log("Protected Audience API is not supported")
+    return
+  }
+  try {
+    const url = new URL(location.href)
+    const hostname = url.searchParams.get("hostname")
+    let audiences = url.searchParams.get("audiences")
+    let fv = url.searchParams.get("fv")
+
+    const interestGroups = await getInterestGroup(hostname, audiences, fv)
+    log("Interest groups", interestGroups)
+    if (!interestGroups || !interestGroups.length) {
+      return;
+    }
+
+    const kSecsPerDay = 3600 * 24 * 30
+    for (let index = 0; index < interestGroups.length; index++) {
+      const interestGroup = interestGroups[index];
+
+      if (interestGroup.enabled) {
+        const result = await navigator.joinAdInterestGroup(interestGroup, kSecsPerDay);
+        log("join ", result)
+      } else {
+        if (!interestGroup.enabled) {
+          await navigator.leaveAdInterestGroup({
+            owner: interestGroup.owner,
+            name: interestGroup.name
+          });
+        }
+      }
+
+    }
+  } catch (error) {
+    log("Error join interest group", error)
+  }
+})

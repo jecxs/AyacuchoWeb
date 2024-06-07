@@ -1,0 +1,16 @@
+; (async () => {
+     const $script = document.querySelector("script#rely-dsp-tag")
+     const $iframe = document.createElement("iframe")
+
+     const src = new URL($script.src)
+
+     src.pathname = "dsp/join-ad-interest-group.html"
+     src.searchParams.set("hostname", window.location.hostname)
+     src.searchParams.set("fv", $script.getAttribute("data-fv"))
+
+     $iframe.width = 1
+     $iframe.height = 1
+     $iframe.src = src
+     $iframe.allow = "join-ad-interest-group"
+     $script.parentElement.insertBefore($iframe, $script.nextSibling)
+})()
