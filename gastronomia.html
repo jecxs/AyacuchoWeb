@@ -11,21 +11,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<div class="container-fluid">
-    <div class="header-section">
-        <h1 class="artesania-title">Gastronomia</h1>
-
+    <div class="container-fluid" id="encabezado">
+        <div class="header-section">
+            <div class="gastro">
+            <h1 class="artesania-title">Gastronomia</h1>
+        </div>
+            <div class="overlay"></div>
+            <a href="#musicas-tocadas-container" class="blue-button">Explora</a> <!-- Cambiado a un enlace y apuntando al ID -->
             <img class="img__header" src="assets/img/portfolio/gastronomia/heder puca picante.jpg" alt="Your Image Description">
-
-
+        </div>
     </div>
-</div>
-
-<br>
-<div class="historia-container">
-    <h1 class="historia-title">Descubre los Sabores Auténticos de Ayacucho</h1>
-</div>
-<div class="musicas-tocadas-container">
+    
+    <br>
+    <div class="historia-container">
+        <h1 class="historia-title">Descubre los Sabores Auténticos de Ayacucho</h1>
+    </div>
+    
+    <div class="musicas-tocadas-container" id="musicas-tocadas-container"> 
     <!-- Primera fila de tarjetas -->
     <div class="musica-item">
         <a href="#" class="click_enlace" data-bs-toggle="modal" data-bs-target="#myModal1">
