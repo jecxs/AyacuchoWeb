@@ -5,6 +5,105 @@ html, body {
     margin: 10px 0.5%;
     padding: 0;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background: linear-gradient(45deg, rgba(30, 27, 27, 0.27), rgba(32, 35, 35, 0.22));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.5s ease;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+.navbar a::before, .navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, #ff7f50, #ff4500, #ff6347);
+    transition: width 0.4s ease, left 0.4s ease;
+    z-index: -1;
+}
+
+.navbar a::before {
+    top: 0;
+    left: 50%;
+}
+
+.navbar a::after {
+    bottom: 0;
+    right: 50%;
+}
+
+.navbar a:hover::before, .navbar a:hover::after {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.navbar a:hover {
+    color: #ffc300;
+    transform: scale(1.1);
+}
+
+.navbar a::after {
+    content: '';
+    height: 3px;
+    background: linear-gradient(45deg, #ff7f50, #ff4500, #ff6347);
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.navbar a.active, .navbar a.active::before, .navbar a.active::after {
+    color: #ffeb3b;
+    background: #ffeb3b;
+}
+.nav-itemg {
+    position: absolute;
+    padding:6%;
+    left: 0;
+
+}
+
+
+
+
+
+
+
 
 
 /* Estilos para la sección de encabezado */
