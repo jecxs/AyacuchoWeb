@@ -113,6 +113,7 @@ body {
     color: white;
     height: 100vh;
     overflow: hidden;
+    width: 100vw;
 }
 
 .img__header {
@@ -346,4 +347,7 @@ body {
     font-family: "Cormorant Garamond", serif;
     font-weight: 300;
     font-style: normal;
+}
+.container-fluid{
+    --bs-gutter-x: 0 !important;
 }
