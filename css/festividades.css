@@ -1,0 +1,234 @@
+/* Reset de estilos */
+html, body {
+    transform: scale(0.75);
+    font-family: Arial, sans-serif;
+    background-color: #ac2d2d;
+    margin: 10px 0.5%;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilos para la sección de encabezado */
+.header-section {
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+.slider {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 10s infinite alternate linear;
+    width: 400%;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 80%;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .slider, .slider ul, .slider img {
+        height: 100vh;
+    }
+}
+
+.artesania-title {
+    position: absolute;
+    top: 25%; /* Ajuste de la posición vertical */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: -5px 10px 10px black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.6s ease;
+}
+
+.artesania-title:hover {
+    font-size: 80px;
+}
+
+.img__header {
+    height: 600px;
+    width: 100%;
+    object-fit: cover; /* La imagen se ajustará dentro del contenedor sin distorsionar su relación de aspecto */
+    object-position: center;
+}
+
+/* Estilos para la sección de tipos */
+.historia-container {
+    background-color: #00c3a4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.historia-title {
+    position: absolute;
+    top: 40%; /* Ajuste de la posición vertical */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: -5px 10px 10px black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 30px; /* Ajuste del tamaño de fuente */
+    font-weight: bold;
+    text-align: center;
+    transition: top 6s, left 6s, font-size 6s, transform 6s; /* Propiedades a animar */
+}
+
+.blue-button {
+    position: absolute;
+    top: 50%; /* Ajusta la posición vertical del botón */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontalmente */
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 3; /* Asegura que el botón esté encima del overlay */
+}
+
+/* Estilos para la sección de elementos */
+.musicas-tocadas-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+}
+
+.musica-item {
+    margin-bottom: 40px;
+    margin-right: 70px;
+    width: calc(20% - 50px);
+    box-sizing: border-box;
+}
+
+.musica, h1 {
+    text-align: center;
+}
+
+.duo-ayacucho-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.img-duo-ayacucho {
+    width: 400px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.94);
+    border: 5px solid rgba(168, 162, 31, 0.21);
+    transition: transform 0.1s;
+}
+
+.img-duo-ayacucho:hover {
+    transform: scale(1.15);
+}
+
+.click_enlace {
+    text-decoration: none;
+    font-family: "MS Mincho";
+    color: rgba(239, 47, 80, 0.64);
+    text-align: center;
+}
+
+.click_enlace h1 {
+    margin: 0 auto;
+    text-align: right;
+}
+
+/* Estilos para los modales */
+.modal-content {
+    background-color: #f8f9fa;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.modal-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin: 263px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #6c757d;
+}
+.modal-img-custom {
+    width: 60%; /* Ajusta este valor según sea necesario */
+    max-width: 100px; /* Ajusta este valor según sea necesario */
+    height: auto; /* Mantiene la relación de aspecto */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    display: block; /* Asegura que la imagen se muestre como bloque */
+}
+
+@media (max-width: 768px) {
+    .modal-img-custom {
+        width: 100%; /* Ajusta el ancho en pantallas más pequeñas */
+        max-width: 10px; /* Asegura que la imagen no sea más ancha que el contenedor */
+    }
+}

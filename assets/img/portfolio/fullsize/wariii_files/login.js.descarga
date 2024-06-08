@@ -1,0 +1,131 @@
+﻿$("form").submit(function (e) {
+    $btn = $(this).find("button");
+    $btn.attr("disabled", "disabled");
+});
+
+let passwordInput = document.getElementById('txtPassword');
+let passwordInput2 = document.getElementById('pass1');
+let passwordInput3 = document.getElementById('pass2');
+
+toggle = document.getElementById('btnToggle');
+toggle2 = document.getElementById('btnToggle2');
+toggle3 = document.getElementById('btnToggle3');
+
+icon = document.getElementById('eyeIcon');
+icon2 = document.getElementById('eyeIcon2');
+icon3 = document.getElementById('eyeIcon3');
+
+
+function togglePassword() {
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        icon.classList.add("fa-eye-slash");
+        //toggle.innerHTML = 'hide';
+    } else {
+        passwordInput.type = 'password';
+        icon.classList.remove("fa-eye-slash");
+        //toggle.innerHTML = 'show';
+    }
+}
+function togglePassword2() {
+    if (passwordInput2.type === 'password') {
+        passwordInput2.type = 'text';
+        icon2.classList.add("fa-eye-slash");
+        //toggle.innerHTML = 'hide';
+    } else {
+        passwordInput2.type = 'password';
+        icon2.classList.remove("fa-eye-slash");
+        //toggle.innerHTML = 'show';
+    }
+}
+function togglePassword3() {
+    if (passwordInput3.type === 'password') {
+        passwordInput3.type = 'text';
+        icon3.classList.add("fa-eye-slash");
+        //toggle.innerHTML = 'hide';
+    } else {
+        passwordInput3.type = 'password';
+        icon3.classList.remove("fa-eye-slash");
+        //toggle.innerHTML = 'show';
+    }
+}
+
+
+toggle.addEventListener('click', togglePassword, false);
+toggle2.addEventListener('click', togglePassword2, false);
+toggle3.addEventListener('click', togglePassword3, false);
+
+
+// Change Tab
+function showRegister() {
+    $('#ingresa.tab-pane').removeClass('show active');
+    $('#registro.tab-pane').addClass('show active');
+    $('#ingresaTab').removeClass('active');
+    $('#registroTab').addClass('active');
+
+}
+function showLogin() {
+    $('#registro.tab-pane').removeClass('show active');
+    $('#ingresa.tab-pane').addClass('show active');
+    $('#registroTab').removeClass('active');
+    $('#ingresaTab').addClass('active');
+
+}
+function verificarPasswords() {
+    // Ontenemos los valores de los campos de contraseñas
+    pass1 = document.getElementById('pass1');
+    pass2 = document.getElementById('pass2');
+
+    // Verificamos si las constraseñas no coinciden
+    if (pass1.value != pass2.value) {
+
+        // Si las constraseñas no coinciden mostramos un mensaje
+        document.getElementById("error").classList.add("mostrar");
+
+        return false;
+    } else {
+
+        // Si las contraseñas coinciden ocultamos el mensaje de error
+        document.getElementById("error").classList.remove("mostrar");
+
+        // Mostramos un mensaje mencionando que las Contraseñas coinciden
+        document.getElementById("ok").classList.remove("ocultar");
+
+        // Desabilitamos el botón de login
+        document.getElementById("login").disabled = true;
+
+        // Refrescamos la página (Simulación de envío del formulario)
+        setTimeout(function () {
+        }, 3000);
+
+        return true;
+    }
+}
+
+function verifL(n) {
+    permitidos = /[^Ã¡Ã Ã¤Ã¢ÂªÃÃ€Ã‚Ã„Ã©Ã¨Ã«ÃªÃ‰ÃˆÃŠÃ‹Ã­Ã¬Ã¯Ã®ÃÃŒÃÃŽÃ³Ã²Ã¶Ã´Ã“Ã’Ã–Ã”'ÃºÃ¹Ã¼Ã»ÃšÃ™Ã›ÃœabcdefghijklmnÃ±opqrstuvwxyzABCDEFGHIJKLMNÃ‘OPQRSTUVWXYZ .]/;
+    if (permitidos.test(n.value.slice(n.value.length - 1))) {
+        //n.value = n.value.slice(0, n.value.length - 1)
+        n.value = "";
+        //n.focus();
+    }
+}
+function verifN(n) {
+    permitidos = /[^0-9]/g;
+    if (permitidos.test(n.value.slice(n.value.length - 1))) {
+        //n.value = n.value.slice(0, n.value.length - 1)
+        n.value = "";
+        //n.focus();
+    }
+}
+
+function verifEmail(n) {    
+    emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    //Se muestra un texto a modo de ejemplo, luego va a ser un icono
+    if (emailRegex.test(n)) {
+        return true;
+    } else {
+        return false;
+    }    
+}
+

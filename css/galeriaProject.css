@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding:0;
+    background-color: #f0f0f0;
+    color: #333;
+    background-image: url('https://es.pikbest.com/backgrounds/illuminated-white-neon-lights-illuminate-a-black-geometrically-designed-stage-in-3d-render_9630491.html');
+    background-size: cover ; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position:inherit ; /* Centra la imagen en el fondo */
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.22));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.5s ease;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: rgba(234, 205, 16, 0);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+.navbar a::before, .navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, #ff7f50, #ff4500, #ff6347);
+    transition: width 0.4s ease, left 0.4s ease;
+    z-index: -1;
+}
+
+.navbar a::before {
+    top: 0;
+    left: 50%;
+}
+
+.navbar a::after {
+    bottom: 0;
+    right: 50%;
+}
+
+.navbar a:hover::before, .navbar a:hover::after {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.navbar a:hover {
+    color: #ffc300;
+    transform: scale(1.1);
+}
+
+.navbar a::after {
+    content: '';
+    height: 3px;
+    background: linear-gradient(45deg, #ff7f50, #ff4500, #ff6347);
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.navbar a.active, .navbar a.active::before, .navbar a.active::after {
+    color: #ffeb3b;
+    background: #ffeb3b;
+}
+
+ .nav-itemg {
+     position: absolute;
+     padding:6%;
+     left: 0;
+
+ }
+
+
+
+
+
+
+h1 {
+    text-align: center;
+
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta el scroll */
+}
+
+.gallery-container {
+    width: 90%; /* Ajusta el ancho según sea necesario */
+    white-space: pre-wrap;
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transición suave */
+}
+
+section {
+    flex: 1;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    box-shadow: 0 0 50px rgb(115, 45, 19);
+}
+
+h2 {
+    text-align: center;
+    color: #27203e;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: calc(20% - 10px); /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery img.expanded {
+    transform: scale(1.5);
+}
+
+.arrow {
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow.left {
+    left: 20px;
+}
+
+.arrow.right {
+    right: 20px;
+}
+
+.arrow:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+.fade {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade.in {
+    opacity: 1;
+}
+
+.fade.out {
+    opacity: 0;
+}

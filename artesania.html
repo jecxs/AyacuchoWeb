@@ -1,115 +1,223 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musicas Ayacuchanas</title>
+    <title>Artesanias Ayacuchanas</title>
     <link rel="stylesheet" type="text/css" href="css/artesaniastyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <!-- CSS de Bootstrap 5 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <!-- JS de Bootstrap 5 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-itemg" style="float: left;"><a class="nav-link item4" href="index.html">Ayacucho</a></li>
+
+                <li class="nav-item  "><a class="nav-link item1" href="">Historia</a></li>
+                <li class="nav-item"><a class="nav-link item3" href="Musica.html">Musica</a></li>
+                <li class="nav-item"><a class="nav-link item2" href="destinos.html">Destinos</a></li>
+                <li class="nav-item"><a class="nav-link item3" href="festividades.html">Festividades</a></li>
+                <li class="nav-item"><a class="nav-link item3" href="gastronomia.html">Gastronomia</a></li>
+                <li class="nav-item"><a class="nav-link item4" href="GaleriaPorject.html">Galeria</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
 <div class="container-fluid">
     <div class="header-section">
         <h1 class="artesania-title">Artesania</h1>
-        <div class="image-overlay">
-            <img src="assets/img/portfolio/fullsize/artesanias.jpg" alt="Artesania">
-            <div class="overlay"></div>
-        </div>
+        <img class="img__header" src="assets%20copy/img/portfolio/fullsize/fondoCerro.jpg" alt="Your Image Description">
+
     </div>
-    <br>
-    <div class="historia-container">
-        <h1 class="historia-title">Historia</h1>
-        <p>Descripción de la historia.</p>
+</div>
+
+<br>
+<div class="historia-container">
+    <h1 class="historia-title">"Observar una pieza de artesanía ayacuchana es sumergirse en un viaje cultural, donde cada detalle es una celebración de la identidad y la historia."</h1>
+</div>
+<div class="musicas-tocadas-container">
+    <!-- Primera fila de tarjetas -->
+    <div class="musica-item">
+        <a href="#" class="click_enlace" data-bs-toggle="modal" data-bs-target="#myModal1">
+            <h1>Ceramicas de Quinua</h1>
+            <h2 class="duo-ayacucho-title"></h2>
+            <img class="img-duo-ayacucho" src="assets/img/portfolio/fullsize/10390959_760001327383110_2117662749648433550_n.png" alt="Iglesia">
+        </a>
     </div>
-    <div class="musicas-tocadas-container">
-        <div class="musica-item">
-            <a href="#" class="click_enlace" data-bs-toggle="modal" data-bs-target="#myModal1">
-                <h1>Iglesia</h1>
-                <h2 class="duo-ayacucho-title"></h2>
-                <img class="img-duo-ayacucho" src="assets/img/portfolio/fullsize/10390959_760001327383110_2117662749648433550_n.png" alt="Duo Ayacucho">
-            </a>
-        </div>
-        <div class="musica-item">
-            <a href="#" class="click_enlace" data-bs-toggle="modal" data-bs-target="#myModal2">
-                <h1>Retablo</h1>
-                <h2 class="duo-ayacucho-title"></h2>
-                <img class="img-duo-ayacucho" src="assets/img/portfolio/fullsize/000945585W.jpg" alt="Duo Ayacucho">
-            </a>
-        </div>
-        <div class="musica-item">
-            <a href="#" class="click_enlace" data-bs-toggle="modal" data-bs-target="#myModal3">
-                <h1>Piedra de huamanga</h1>
-                <h2 class="duo-ayacucho-title"></h2>
-                <img class="img-duo-ayacucho" src="assets/img/portfolio/fullsize/piedra.jpg" alt="Duo Ayacucho">
-            </a>
-        </div>
-        <div class="musica-item">
-            <a href="#" class="click_enlace" data-bs-toggle="modal" data-bs-target="#myModal4">
-                <h1>Mantas Ayacuchanas</h1>
-                <h2 class="duo-ayacucho-title"></h2>
-                <img class="img-duo-ayacucho" src="assets/img/portfolio/fullsize/mantas.jpg" alt="Duo Ayacucho">
-            </a>
-        </div>
+    <div class="musica-item">
+        <a href="#" class="click_enlace" data-bs-toggle="modal" data-bs-target="#myModal2">
+            <h1>Retablo Ayacuchano</h1>
+            <h2 class="duo-ayacucho-title"></h2>
+            <img class="img-duo-ayacucho" src="assets/img/portfolio/fullsize/000945585W.jpg" alt="Retablo">
+        </a>
+    </div>
+    <div class="musica-item">
+        <a href="#" class="click_enlace" data-bs-toggle="modal" data-bs-target="#myModal3">
+            <h1>Piedra de huamanga</h1>
+            <h2 class="duo-ayacucho-title"></h2>
+            <img class="img-duo-ayacucho" src="assets/img/portfolio/fullsize/piedra.jpg" alt="Piedra de Huamanga">
+        </a>
+    </div>
+    <div class="musica-item">
+        <a href="#" class="click_enlace" data-bs-toggle="modal" data-bs-target="#myModal4">
+            <h1>Mantas Ayacuchanas</h1>
+            <h2 class="duo-ayacucho-title"></h2>
+            <img class="img-duo-ayacucho" src="assets/img/portfolio/fullsize/mantas.jpg" alt="Mantas Ayacuchanas">
+        </a>
+    </div>
+    <!-- Segunda fila de tarjetas -->
+    <div class="musica-item">
+        <a href="#" class="click_enlace" data-bs-toggle="modal" data-bs-target="#myModal5">
+            <h1>Textiles</h1>
+            <h2 class="duo-ayacucho-title"></h2>
+            <img class="img-duo-ayacucho" src="assets%20copy/img/portfolio/fullsize/textileria.jpg" alt="Textiles">
+        </a>
     </div>
 
-    <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/img/portfolio/fullsize/10390959_760001327383110_2117662749648433550_n.png" alt="Iglesia">
-                    <h5 class="modal-title" id="exampleModalLabel1">Iglesia</h5>
-                    <p class="modal-text">Descripción de la Iglesia.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
+    <div class="musica-item">
+        <a href="#" class="click_enlace" data-bs-toggle="modal" data-bs-target="#myModal7">
+            <h1>Joyería</h1>
+            <h2 class="duo-ayacucho-title"></h2>
+            <img class="img-duo-ayacucho" src="assets%20copy/img/portfolio/fullsize/Aretes-5.jpg" alt="Joyería">
+        </a>
     </div>
-    <div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/img/portfolio/fullsize/000945585W.jpg" alt="Retablo">
-                    <h5 class="modal-title" id="exampleModalLabel2">Retablo</h5>
-                    <p class="modal-text">El retablo ayacuchano es una de las máximas expresiones del arte popular de Perú. Es un espejo de la cultura, tradición y devoción de un pueblo resiliente y lleno de ingenio. A través de este viaje, te invito a descubrir el fascinante mundo del retablo ayacuchano, una joya artística que ha trascendido fronteras..</p>
-                    <p class="modal-text">Orígenes y Desarrollo del Retablo Ayacuchano
-                        Raíces en la Tradición
-                        Los orígenes del retablo ayacuchano se remontan a la época colonial. Conocidos también como cajas de San Marcos, estos retablos surgieron como herramientas usadas por sacerdotes españoles para enseñar historias bíblicas a los pueblos indígenas. Su diseño inicial estaba fuertemente influenciado por las técnicas y estilos traídos de España. Con el tiempo, los artistas locales añadieron elementos propios de su cultura y entorno.</p>
 
+</div>
+
+<!-- Modales -->
+<div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+
+            <div class="modal-body">
+                <h5 class="modal-title" id="exampleModalLabel1">Iglesia</h5><br>
+                <img src="assets/img/portfolio/fullsize/10390959_760001327383110_2117662749648433550_n.png" alt="Iglesia">
+                <br>
+                <br>
+                <p class="modal-text">Tradicional iglesia de techo ayacuchana, la cual es colocada durante la fiesta de techado de la casa o zafacasa. Dentro de la cosmovisión andina, colocar una iglesia de arcilla en el techo de las casas es señal de protección familiar y productividad agrícola. Se le suele acompañar de otras piezas de cerámica como ovejas y toros. Elaborada mediante la técnica de modelado a mano, utilizando arcilla y engobes naturales.
+                <h5>La cerámica del distrito de Quinua</h5>
+                es una de las tradiciones alfareras más emblemáticas del Perú por su distintiva iconografía y por ser un medio de expresión de la identidad local. En el 2019, los conocimientos, saberes y prácticas relacionadas a la elaboración de la cerámica de Quinua fueron reconocidas como Patrimonio Cultural de la Nación, por ser un medio de expresión artística y social transmitiendo la memoria histórica y tradición oral del pueblo.
+                </p>
+                <div>
+                    <table class="table table-sm table-bordered producto-tabla-medidas">
+                        <tbody>
+                        <tr class="thead-light"></tr>
+                        <th>Alto</th>
+                        <th>Largo</th>
+                        <th>Ancho</th>
+                        <th>Peso</th>
+                        <tr>
+                            <td>29.00 cm</td>
+                            <td>17.00 cm</td>
+                            <td>18.00 cm</td>
+                            <td>900.00 g</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
+                <br>
+                <hr> <hr>
+                <h1 class="modal-title" id="exampleModalLabel9">Nacimineto tipico de Quinua</h1> <br>
+                <img src="assets%20copy/img/portfolio/fullsize/Nacimiento%20típico%20de%20Quinua.jpg" alt="quinua">
+                <br>  <br>
+                <p class="modal-text">La obra está compuesta por el Misterio –Jesús, José y María–, un gran candelabro con representaciones del burro y el buey, y los pastores, con gestos de respeto y veneración inclinados ante el Niño Dios.
+                    Para la elaboración de esta obra se ha utilizado arcilla y engobes naturales obtenidos de la tierra en la región de Ayacucho.
+                    El proceso, que incluye el moldeado, secado, pintado y horneado tiene una duración de 4 semanas. La artista, para dar brillo a la obra ha utilizado el canto rodado.</p>
+                <hr> <hr>
+
+            </div>
+
+            <h1 class="modal-title" id="exampleModalLabel10">Torito de techo</h1> <br>
+            <img src="assets%20copy/img/portfolio/fullsize/torito.jpg" alt="quinua">
+            <br>  <br>
+            <p class="modal-text">Escultura modelada a mano con arcilla, pintada a mano con engobes naturales y decorada con iconografía floral andina. De uso decorativo, esta pieza es una representación contemporánea del toro, inspirada en escenas costumbristas de la vida cotidiana de Quinua.
+                La cerámica del distrito de Quinua es una de las tradiciones alfareras más emblemáticas del Perú por su distintiva iconografía y por ser un medio de expresión de la identidad local. En 2019, los conocimientos, saberes y prácticas relacionadas a la elaboración de la cerámica de Quinua fueron reconocidas como Patrimonio Cultural de la Nación, por ser un medio de expresión artística y social transmitiendo la memoria histórica y tradición oral del pueblo..</p>
+            <hr> <hr>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/D6H7jMHYR-E?si=DtvrS2DNAi0A9FBZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/img/portfolio/fullsize/piedra.jpg" alt="Piedra de huamanga">
-                    <h5 class="modal-title" id="exampleModalLabel3">Piedra de huamanga</h5>
-                    <p class="modal-text">Descripción de la Piedra de Huamanga.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
+</div>
+
+<!-- Tarjeta retablo -->
+<div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/portfolio/fullsize/000945585W.jpg" alt="Retablo">
+                <h5 class="modal-title" id="exampleModalLabel2">Retablo</h5>
+                <p class="modal-text">El retablo ayacuchano es una de las máximas expresiones del arte popular de Perú. Es un espejo de la cultura, tradición y devoción de un pueblo resiliente y lleno de ingenio. A través de este viaje, te invito a descubrir el fascinante mundo del retablo ayacuchano, una joya artística que ha trascendido fronteras..</p>
+                <p class="modal-text">Orígenes y Desarrollo del Retablo Ayacuchano
+                    Raíces en la Tradición
+                    Los orígenes del retablo ayacuchano se remontan a la época colonial. Conocidos también como cajas de San Marcos, estos retablos surgieron como herramientas usadas por sacerdotes españoles para enseñar historias bíblicas a los pueblos indígenas. Su diseño inicial estaba fuertemente influenciado por las técnicas y estilos traídos de España. Con el tiempo, los artistas locales añadieron elementos propios de su cultura y entorno.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Piedra de huamanga  -->
+<div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5 class="modal-title" id="exampleModalLabel3">Piedra de huamanga</h5>
+                <img src="assets/img/portfolio/fullsize/piedra.jpg" alt="Piedra de huamanga">
+                <p class="modal-text">Es una formación geológica sedimentaria de origen volcánico peruano, de color blanco y a veces, con tonalidades tenues que van del gris o plomo al sepia. Es un sedimento de origen volcánico técnicamente conocido como piedra de alabastro, material constituido por sulfato cálcico hidratado (SO4Ca - 2H2O). .</p>
+                <br> <br>
+                <hr><hr>
+                <h5 class="modal-title" id="exampleModalLabel11">Estatuilla de piedra de huamanga</h5>
+                <img src="assets%20copy/img/portfolio/fullsize/piedra%202%20Huamanga.jpg" alt="Piedra de huamanga">
+                <p class="modal-text">En la evolución artística del tallado en piedra de Huamanga se presentan tres etapas. La época virreinal o de apogeo en la que predomina la temática religiosa (nacimientos, calvarios, vírgenes, cristos, santos, Niño Jesús, etc.). Las obras se cubren con un estofado de pan de oro y se emplea la técnica de la encáustica. También existieron en menor proporción obras profanas para decorar los salones.</p>
+                El tallado en piedra de Huamanga sigue siendo un arte vibrante y significativo, reflejando la historia y la evolución cultural de Ayacucho, manteniendo viva una tradición que ha perdurado a lo largo de los siglos.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div>
     <div class="modal fade" id="myModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
@@ -117,9 +225,20 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="assets/img/portfolio/fullsize/mantas.jpg" alt="Mantas Ayacuchanas">
                     <h5 class="modal-title" id="exampleModalLabel4">Mantas Ayacuchanas</h5>
-                    <p class="modal-text">Descripción de las Mantas Ayacuchanas.</p>
+                    <img src="assets/img/portfolio/fullsize/mantas.jpg" alt="Mantas Ayacuchanas">
+
+                    <p class="modal-text">Las mantas ayacuchanas, también conocidas como "lliqllas" o "mantas de Huamanga," son una parte integral de la cultura y el patrimonio textil de Ayacucho, Perú. Estas mantas no solo cumplen una función práctica, sino que también están cargadas de simbolismo y significado cultural. Aquí algunos aspectos importantes del significado de las mantas ayacuchanas:
+
+                        <br> <strong>1. Identidad y Cultura</strong> <br>
+                        Las mantas ayacuchanas son una expresión de la identidad cultural de las comunidades que las tejen. Cada diseño y patrón puede variar según la región y el grupo étnico, representando la rica diversidad cultural de Ayacucho. Los colores y motivos son a menudo específicos a determinadas comunidades, lo que permite identificar el origen del tejedor y su conexión con su entorno.
+
+                        <br> <strong>2. Símbolos y Motivos<br> </strong>
+                        Los patrones y símbolos tejidos en las mantas ayacuchanas tienen significados específicos. Algunos de los motivos comunes incluyen:
+
+                        Animales: Figuras de llamas, cóndores, serpientes y otros animales sagrados o importantes para la cosmovisión andina.
+                        Elementos Naturales: Montañas, ríos, plantas y otros elementos del paisaje que reflejan la relación estrecha entre las comunidades andinas y su entorno natural.
+                        Formas Geométricas: Diseños geométricos que pueden tener significados ancestrales o simbólicos, representando conceptos como la dualidad, la armonía y el equilibrio..</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -127,20 +246,112 @@
             </div>
         </div>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var musicaItems = document.querySelectorAll('.musica-item a');
-            musicaItems.forEach(function(item, index) {
-                item.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    var targetModalId = this.getAttribute('data-bs-target');
-                    var modal = new bootstrap.Modal(document.querySelector(targetModalId));
-                    modal.show();
-                });
-            });
-        });
-    </script>
 </div>
+<!--Textileria -->
+<div class="modal fade" id="myModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5 class="modal-title" id="exampleModalLabel5">Bordados</h5>
+                <img src="assets%20copy/img/portfolio/fullsize/Bordados-de-Ayacucho-1.jpg" alt="Textiles">
+                <p class="modal-text">Los textiles son tejidos a mano, se realizan en telares de pedal principalmente de alpaca y lana de oveja, aunque también se pueden hacer con las fibras de algodón. El producto final es bordado a mano con motivos decorativos inspirados en la naturaleza, que representa las plantas flora locales, tales como el nogal (marrones), molle (verdes), chilca (amarillos), y la cochinilla (rojos). Además de los tonos apagados elegantes de tintes naturales.</p>
+                <br><hr><hr>
+                <h5 class="modal-title" id="exampleModalLabel33">Ponchos</h5>
+                <img src="assets%20copy/img/portfolio/fullsize/ponchos%20.jpg" alt="Textiles">
+                <p class="modal-text">Los ponchos ayacuchanos son parte de la rica tradición textil del Perú, específicamente de la región de Ayacucho, ubicada en los Andes centrales del país. Estos ponchos son piezas de vestimenta tradicionales que han sido utilizadas por generaciones y tienen un profundo significado cultural y simbólico.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5 class="modal-title" id="exampleModalLabel7">Aretes </h5>
+                <img src="assets%20copy/img/portfolio/fullsize/arete.jpg" alt="Joyería">
+                <p class="modal-text"> <b> Los "aretes ayacuchanos"  </b> son piezas de joyería tradicionales originarias de la región de Ayacucho, en Perú. Estos aretes suelen estar hechos a mano por artesanos locales y presentan diseños elaborados y coloridos que reflejan la rica cultura y tradiciones de la zona.
+                    Los aretes ayacuchanos suelen estar hechos de materiales como plata, alpaca u otros metales, y pueden estar decorados con piedras semipreciosas, cuentas de colores, tejidos, y grabados que representan motivos tradicionales andinos, como animales, plantas, símbolos religiosos o patrones geométricos.
+                    Estas joyas no solo son apreciadas por su belleza estética, sino que también tienen un significado cultural profundo para las comunidades locales. Pueden ser utilizadas en ocasiones especiales, como bodas, fiestas y ceremonias rituales, y también se consideran como símbolos de identidad cultural y conexión con las tradiciones ancestrales.</p>
+                <br> <hr> <hr>
+                <h5 class="modal-title" id="exampleModalLabel557"> Pulsera - Huayruro</h5>
+                <img src="assets%20copy/img/portfolio/fullsize/pulsera-hilo-wayruro-scaled.jpg" alt="Joyería">
+                <p class="modal-text"><b>Las pulseras de huayruro</b> son piezas de joyería que tienen un profundo significado cultural y espiritual en varias regiones de Sudamérica, especialmente en Perú y Bolivia. El huayruro es una semilla que se caracteriza por sus colores vivos y contrastantes, generalmente rojo y negro, y es conocida por su uso en amuletos y joyas.
+
+                    <br><b> Características de las Pulseras de Huayruro:</b>
+
+                    <br><br>
+                    <b>Material:</b>
+                    <br>
+                    Semillas de Huayruro: Estas semillas provienen del árbol Ormosia coccinea, conocido como huayruro. Son conocidas por su distintivo color rojo con una mancha negra, aunque algunas semillas pueden ser completamente rojas o negras.
+                    Hilos y Cuerdas: Las semillas se ensartan en hilos o cuerdas que pueden ser de materiales naturales como algodón o cuero, o materiales sintéticos para mayor durabilidad.
+                    Metales y Otros Adornos: Algunas pulseras pueden incluir elementos de plata, oro u otros metales, así como piedras semipreciosas para complementar el diseño.
+                    <br>
+                    <b>Diseños:</b>
+                    <br>
+
+                    Tradicionales: Los diseños suelen ser simples, destacando la belleza natural de las semillas.
+                    Modernos: Hay versiones que incorporan elementos contemporáneos, mezclando huayruro con metales, cuentas de vidrio, o elementos decorativos adicionales.
+                    Significado y Creencias
+                    Buena Suerte: Se cree que el huayruro trae buena suerte y fortuna a quien lo lleva.
+                    Protección: Estas semillas son vistas como protectoras contra la mala energía y el mal de ojo.
+                    Fertilidad y Prosperidad:
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<footer class="footer">
+    <div class="container-fluid text-center">
+        <p>&copy; 2024 Compañeritos de Joel. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<script>
+    window.addEventListener('scroll', function() {
+        let sections = document.querySelectorAll('section');
+        let scrollPosition = window.pageYOffset;
+
+        sections.forEach(section => {
+            if (section.offsetTop <= scrollPosition + window.innerHeight / 2) {
+                section.classList.add('visible');
+            }
+        });
+
+        let links = document.querySelectorAll('.navbar a');
+        links.forEach(link => {
+            let section = document.querySelector(link.getAttribute('href'));
+            if (section.offsetTop <= scrollPosition + window.innerHeight / 2 &&
+                section.offsetTop + section.offsetHeight > scrollPosition) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
