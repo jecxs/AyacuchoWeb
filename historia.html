@@ -4,111 +4,304 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayacucho: Historia, Geografía y Naturaleza</title>
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
     <link rel="stylesheet" href="css/historia.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <!-- JS de Bootstrap 5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
 </head>
-<body>
-    <header>
-        <h1>Historia</h1>
-    </header>
 
+<body>
+
+    <div class="banner">
+        <div class="capa"></div>
+        <div class="info">
+            <h1>Historia</h1>
+            <p style="text-align: justify;">Descubre la rica y fascinante historia de Huamanga, conocida hoy como Ayacucho. Desde sus antiguos orígenes en la época preincaica, pasando por la influencia del poderoso Imperio Wari y la conquista incaica, hasta llegar a los tiempos coloniales y la emblemática Batalla de Ayacucho, que selló la independencia de América del Sur.</p>
+            <a href="#historia">Ver Más</a>
+        </div>
+    </div>
     <main>
         <section id="historia">
-            <h2>Historia de Ayacucho</h2>
-            <p>La palabra Ayacucho proviene de 2 voces quechuas "aya" (alma) y "cuchu" (rincón o morada) por los restos humanos encontrados
-                en este lugar.</p>
-            <p>La historia de la Ayacucho se divide en 4 épocas: Preincaica, Incaica, Virreinal y Republicana</p>
-            <p>Época Preincaica</p>
-            <p> Las ruinas encontradas en la localidad de Ayacucho demuestran que la ciudad ha sido habitada hace 20 milenios A.C.Estos
-                restos fueron encontrados en la cueva de "Pikimachay" que significa "cueva de pulgas". Esta cueva ha sido descubierta en el
-                año 1966 por el arqueologo Richard MacNeish, en su búsqueda del origen del maíz en América.
-                Luego entre los años 500 a 1100 surgió el Imperio Wari que se ha formado sobre la base de las culturas Huraña, Nazca y
-                Tiahuanaco. Ayacucho fue el centro político administrativo del Imperio incaico con altos niveles de calidad de producción de
-                cerámicas, tejidos, metales y piedras entre los años 100 a 1420 D.C. en el periodo de los Chancas.
-                La ciudad de Wari llegó a tener una población superior a los 50.000 habitantes. Esta cultura se expandió hasta los actuales
-                departamentos de Cajamarca, Lambayeque, Cuzco y Moquegua. Cuando el Imperio Wari se estaba debilitando surgieron varias
-                étnicas locales como los Chankas, Wankas, Willcas, Uramarcas, Atunsullas, Andamarca, Angaraes, Quinuallas y otros grupos
-                regionales que agrupándose formaron la cultura Chanka que rivalizaron con los Incas</p>
-            <p>Época incaica</p>
-            <p> Durante el siglo XV, la región fue ocupada por los incas, reafirmando su centro administrativo y base para la lucha contra los
-                Xauxas y Wankas, trasladando a las poblaciones originales a otros lugares y repoblando Ayacucho con distintas etnias y
-                pueblos del imperio.
-                Asi se levantó el centro administrativo religioso de " Vilcashuamán" palabra quechua que significa "halcón sagrado".
-                A partir del año 1532 llegaron los españoles a la región de Ayacucho dando guerra a los incas e invasión hispana. Este tiempo
-                de guerra duró aproximadamente hasta el año 1537.</p>
-            <p>Época virreinal</p>
-            <p> Durante la ocupación española edificaron una ciudad como cabecera para la colonización de la zona, fundándose asi en las
-                cercanías a la pampa de la quinua que más adelante se llevó la histórica batalla de Ayacucho.
-                Luego debido al tiempo climatológico acordaron trasladar la ciudad a donde actualmente ocupa.
-                En el año 1540, Francisco Pizarro fundó la ciudad de San Juan de la Frontera de Huamanga el 25 de abril. La fundación de
-                dicha ciudad se logró después de una dura lucha y resistencia de los incas dirigidos por Manco Inca.
-                Después de la fundación española, la ciudad de Huamanga era el centro comercial por dos razones: ubicación geográfica y
-                paso obligado de viajeros y comerciantes de Lima o Huancavelica que se dirigian a Cusco, Alto Perú y Rio de la Plata.</p>
-            <p>Época republicana</p>
-            <p> Huamanga seguía siendo el centro militar el ejército español.
-                En el año 1820 el General Álvarez de Arenales, bajo las instrucciones de José de San Martín llegó a la ciudad durante la
-                denominada Campaña de Intermedios que buscaba atacar Lima por los Andes mientras San Martín lo hacía por la costa. Así,
-                Arenales declaró la independencia en Huamanga el 1 de noviembre de 1820.
-                En 1824 con la Batalla de Ayacucho, escenificada en las Pampas de la Quinua de esta ciudad el 9 de diciembre, se consolidó la
-                Independencia del Perú y América. El ejército libertador comandado por el Mariscal Antonio José de Sucre, con su triunfo en
-                esta batalla, brindó a este lugar su momento de gloria.
-                En la guerra con Chile, la disponibilidad de recursos con que contaba Huamanga, permitió al Mariscal Andrés Avelino Cáceres
-                iniciar sus campañas contra el ejército invasor.</p>
+            <!-- Contenedor para la línea de tiempo -->
+            <div id="timeline-embed"></div>
+            
+            <div class="cards-container">
+                <div class="card fade-in">
+                    <img src="https://ayacucho.cap.org.pe/wp-content/uploads/2022/12/visita-guiada-ayacucho.jpg" alt="Historia de Ayacucho" class="card-image">
+                    <div class="card-content">
+                        <h2>Historia de Ayacucho</h2>
+                        <p>La palabra Ayacucho proviene de dos voces quechuas "aya" (alma) y "cuchu" (rincón). Estos términos reflejan el lugar por los restos humanos encontrados en la región.</p>
+                        <p>La historia de Ayacucho se divide en cuatro épocas: Preincaica, Incaica, Virreinal y Republicana.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <img src="https://blog.viajesmachupicchu.travel/wp-content/uploads/2020/03/huari-1170x550.jpg" alt="Época Preincaica" class="card-image">
+                    <div class="card-content">
+                        <h3>Época Preincaica</h3>
+                        <p>Las ruinas en Ayacucho demuestran que ha sido habitada hace más de 20 milenios A.C. Restos en la cueva de Pikimachay fueron descubiertos en 1966.</p>
+                        <p>El Imperio Wari, entre 500 a 1100 D.C., fue un centro político y administrativo influyente en la región, destacándose por su producción de cerámica y tejidos.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <img src="https://historiaperuana.pe/wp-content/uploads/cabildo-virreinato.jpg" alt="Época Virreinal" class="card-image">
+                    <div class="card-content">
+                        <h3>Época Virreinal</h3>
+                        <p>Durante la colonización española, se fundó la ciudad de San Juan de la Frontera de Huamanga en 1540 por Francisco Pizarro.</p>
+                        <p>La ciudad fue un centro comercial debido a su ubicación geográfica y fue clave en la resistencia inca antes de la fundación española.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <img src="https://imgmedia.larepublica.pe/1200x630/larepublica/original/2022/07/26/62e02da68cb10d104e231371.jpg" alt="Época Republicana" class="card-image">
+                    <div class="card-content">
+                        <h3>Época Republicana</h3>
+                        <p>En 1820, el General Álvarez de Arenales declaró la independencia en Huamanga. La Batalla de Ayacucho en 1824 consolidó la independencia del Perú y América del Sur.</p>
+                        <p>En la guerra con Chile, Huamanga fue crucial para las campañas del Mariscal Andrés Avelino Cáceres contra el ejército invasor.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <img src="https://image.slidesharecdn.com/ayacuchows-161104015539/85/Ayacucho-3-320.jpg" alt="Geografía de Ayacucho" class="card-image">
+                    <div class="card-content">
+                        <h2>Geografía de Ayacucho</h2>
+                        <p>Ayacucho se encuentra en la zona sur-central de los Andes peruanos, con un área de 43,821 km², mostrando un relieve accidentado.</p>
+                        <p>Los ríos Apurímac, Pampas y Mantaro forman impresionantes cañones en su superficie.</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <img src="https://denomades.s3.us-west-2.amazonaws.com/blog/wp-content/uploads/2020/09/13163132/70928067_103581854376236_9028388690644172800_n.jpg" alt="Naturaleza de Ayacucho" class="card-image">
+                    <div class="card-content">
+                        <h2>Naturaleza de Ayacucho</h2>
+                        <p>Ayacucho tiene un relieve muy accidentado con impresionantes cañones formados por los ríos Apurímac, Pampas y Mantaro.</p>
+                        <p>En las punas andinas, el nevado Sara Sara destaca como la elevación más importante.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="geografia">
-            <h2>Geografía de Ayacucho</h2>
-            <p>Ayacucho se encuentra ubicado en la zona sur – central de los andes peruanos, 
-                con un área total de 43 821 km2, equivalente al 3,4% del territorio nacional.
-                Su superficie muestra un relieve muy accidentado, donde los ríos Apurímac, Pampas y Mantaro forman impresionantes cañones.</p>
-        </section>
 
-        <section id="naturaleza">
-            <h2>Naturaleza de Ayacucho</h2>
-            <p>Su superficie muestra un relieve muy accidentado, donde los ríos Apurímac, Pampas y Mantaro forman impresionantes cañones. 
-            En las punas o altas mesetas andinas el relieve presenta pampas onduladas; y en el sur, el nevado Sara - Sara es el más importante.</p>
-        </section>
-        
-        <!-- Álbum de imágenes -->
-        <section>
-            <h2>Álbum de imágenes</h2>
+            <h2>"Retratos del Pasado: Ayacucho"</h2>
+
             <div class="album">
-                <img src="https://repositorio.pucp.edu.pe/index/bitstream/handle/123456789/137367/WIS-F-0363.jpg?sequence=1&isAllowed=y" alt="Arco 9 de Diciembre, Ayacucho">
-                <img src="https://etnias.pe/wp-content/uploads/2022/06/Adios-pueblo-de-Ayacucho_historia_Ernesto-Camassi.jpg" alt="Descripción de la imagen 2">
-                <img src="https://i.pinimg.com/736x/c1/b1/c5/c1b1c5e227c05c633803e34cbe0efbc2.jpg" alt="Descripción de la imagen 3">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1A57dT8V2jOQw_g97ZSppAjT9-ta3eMsFJEp86zjxsuRCAGPhJDdSi4koErtMshyphenhyphenJ5zU0xLrv5BxfP6dtpMQm513_fq7L7MFwLYJK269MRbU6vLxnDQlO7qL2jRkOaOqPHadgIMiD3eHZ/s1600/1D.jpg" alt="Descripción de la imagen 4">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhd6dLNPuXGDGPPA9GYvOy-if4TRmdhhzY_8G6imWOZ4vc7iHdFS7JY6Tt3eddO-2PG03fJc37pycgvAVdnkAA0AaJ47wdAuu6Vnxr1J9jwoQmP_Pgt7ip9HetWYY24iHYjZiU-p9YOKxXt/s1600/Romer%C3%ADa+al+cementerio.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6QjCgmV164Y66OuDpn-fRMpkYTl-CB-ZJA0CefroLIAXM0saItFgg1cgjmwKQmHCaH36Oiu3dy3YDaJs_qPtf6XSfXrvjjsUpmbZVnXd4fdfkRNS2MS3YlouRsyDFIh4mhazEitjAfF29/s1600/est.libertad.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmEDR1yWcq0m4pUIwnWwoFLbx_jH0pFHMzjP6LhayEv5tcnskmZ-opaUYkYucFAZO6Z2w6d-_r7TXbfdFewhTNr1XNsqmpgs_mJBk0CXgs2pBzyYO53XIvf1gPgW059K0GR7dX1GRNVvXy/s400/tres+mascaras.JPG" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFPv3qvbsC6sLC8dDjEnzyGfbJj3x9hv9euf7-Sl3DN0H59ZzBU7KOAn4aVFg7i33qdK_3aF8dTSWjT5KsUREHlg_0EjW7aQl7kSZuj1Wst-S1kPUFZToklpRcLbDT_0jKs5MZrbDJXw2g/s400/1593.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxqJo1WrkWWUjeVzPeptl83b3XBJSfHVLTESG6YynHBCQg7PNk6Fa31VIN9vSyywQ1_U8qLH41jEb7qbYtL-lrkVynDrZJE6CrCFkLZ4IBwh0VWdOimGlxr2G-GGC2q56Y_SuHeTKToMuI/s400/1N.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYhkU5Z92e4CZg89xptQUVL2c4pc2GAJKpN3KWgz2Icf5rYR6d8YIMWPzRIaP2OuzgodIl74DJeWf7mof4tEQfKyPcQ4B4uzvG-Uy81eHdd68LxgxH44KbV2LgZny-4gRGSuMf3TLcaa0D/s400/1R.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfHMwx6l8Gv5BDrUdlMaD3G6NgVww6rHk2GdtSo1EgvhzftAnuhOnslBK1kjhCT5ftQwo6gSUFatpBb3dONB_3hLC9UidvT9z_MXcnz9fv00BhETFZ8h1IvgdWdygvFiGmue2Ms2XcX_wX/s400/Alameda+1910.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbvZuddtvOl6P2OXhFQrDAMQcv3nbfs3m4Jc8U9LGF2YaKsrYW1mw8JItoYfz52PgwzdYch8ghhzpbfYENJpx0fC2q_z8Wec19lXvuuJlNrF5EF9HxvAs2Qz-FxtQZa6qh1a4uLgsjaoth/s400/Canal+de+agua.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5TycG8o4f9SX5-R3uMzVsO8TJ5yp7cbhMe7-2uTFiAtcU3w6pCE_BBD5-IwCbTnp5nO0DsOmXeMPe7_wToSODKBg7up-96E1CKxenlcLOL9rvgJzj7I3UrIg2e5IWZig091RblS18tWED/s400/Escuela+Mix.+6.117+Carmen+Alto+(Prof.+Ubaldina+Murga).jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjR2aBqugBMK9zkESwNqD9KOVfxyAnxrne2lLnhmR-fQqOlNotTIeiAA02lSY0MxxYkCoQPbT6JZdaNJ3rf23PQv-xDy2EAc2FkLEiuL4aiFNrN8ltywv01L3XhAKq1qhCJ0lF8WoRkzUwe/s400/Escuela+Parroquial+San+Miguel+-+La+Mar.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg91q7tlE9Q9UUtw2fLlJzuLz5O6TQQYXVIhEwIQAkcIw6ZtK_0Kj8ioCWKfjdnmntlVfb4IhbzoEZNEUdN0BXkdwC_8a_wB1l6uTfkYP3o_KKs1hyphenhyphen3cXvwWOz6TzXtnG7taHHDPNdz6obH/s400/Mercado+de+Santa+Clara.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXnLITsnBml3wSb_0uxagqVX2kSldcdL99GZZcjnfFY5s2o_5vrSNXf-r-c3Mn-DUh0IxmDAuTFRjZKW-BKtuaqgzDKPt8X_vgDwnkZTLryPn7hX3_cFr7eFs1IeWmzMZPxrfT4fckSVKL/s400/Miembros+del+PArtido+Constitucional+(10-nov-1895).jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVIpwxkLhhKFbklRiCcgwvORo3qB173w_miuBGKmi2d2sQMYN-YCBDJLSYD9SIBelfk6LgDOAAm0fdcAvNWsIPWSbRkOK-SYDel8u8S1M1h7fBD0EBFWz7afiFh9_e5A8U8Ivi7Xqiprhx/s400/Pampa+de+Ayacucho.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYFeCeW38NcUxNUCV2QTvbCwDhe6eQ0fwv0q_DCF9dvemPqhajaoD7B_fxRVFiQm3rv2ElSAfnaNfyxVSdaLx7Yf2SoxBJV5g921qv2jrDJIhrZepeqCVLSNc_5QlgbV6jwrsNwFIlACoh/s400/Plaza+1912.JPG" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx2zTmmaP3m4IM9ace9ySzrp5nvr4nYePug5fP8WeTIt85f3y-VujCsuGbjnvR3raHmGNEYtmPRae9if87iqI4e0OI8xjL_BBHdIdg_lDXul9MNOrTaYl4PjJAAhCkVcnF8ZVodvxECodW/s400/Sutacc+Chaca.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT0EA7-fhbGtv8Llpmstt_HL5Rg97VLWzIo5dmDUgayJSse3G4mZJC2X1DF97g_USJOSdO-T65MzInfxKiJBkaRZHtdPekiOGRiYe89VT0zvP_1WVeUPat0ZlejLZmSSdE98RmDs8Wz0Z0/s400/Templo+de+San+Agustin.JPG" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCLyhwUBUsSTciV58xIsGWCfuZf59yxLdeXgPYtbRsxvUFCK6wN00XjghaGT4fB6uCHflQYb7hPhsVZX0KcmxsmK8i42Gi7EvZpeGv9fIwArRXF_dcgPdNtR5W9Kb7euh2clvo1G0XdhKe/s400/Templo+de+San+Francisco+de+Asis.JPG" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2w6Oq_PVnQIPRQXbL3W1XZcPHdnHt8Mlu7AYVTtyq85CnHuqlxgw4p9vaBi3CssRXI4EZReiP69xDS39qqNFQrA8IbS2EOHxmwTXk8dC3CbT9zswLc6l7DTfI5hEXi-A3tdNN_o0zvjJb/s400/Templo+de+San+Francisco.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8kVmpzvGUz5nVi0OmMVUfIQ3MopUu3MAaW3YcyyeWgI_6FTLIU1uknvVm_5NkLEic_RamPMvgFDLkctsXVpL-iQuFUQUBnR8rKUUc0UXJpX72pt3ASOVIaVjNC4zvSVn2IR42xVakS4u5/s400/Templo+de+Santo+Domingo.JPG" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgaA_IW0Acy8Cgfmqe7WjqkkvyZXhqTxRbhV922WwqwgWuku5q9v-Bo9V-hzL-hCdlTNsYrspDcjOIaSA94xOok47YrHjWSeil8eZXrSRDQ5jhHGg53xahI7xBKKoYBq_0rT8bX7iDkmPl/s400/Templo+de+san+Agustin+1945.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFegpw5xDz0bU26e2uIFutLh4aySr-an7AHR5PHxyLI1nrKbpiCXQpoI_CupozTB8UhdcD0CBgSi7RKYIMq8tdCusXOBFLB3nN2TuJCPwahHZmavDoZYWvvx80TTuQOAZCN6YzDr0MObkx/s400/plaza+y+mercado+1906-1908.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6-rr1lgGvSEyPzb-STno2aVoN80EEAZdvLfP7l3oHN85Mgh_XiIMppycdlWtp9I3bnlCq3NYu7Jd_Zb-0dZraPHnbTt-Mh4kF008P4mTnQWo_2tCT3z0JklJhZ1W9DQjTNdj8q3ecqxmz/s400/plazoleta+santa+clara.JPG" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyq-DOU7J96zzR4mjTljtTnBZUjICC8ddF1K1QtTZnMeqE_r6OiRakjc5sEJ8j4DYUM4MiZXzjSWqVoLEGwxGM1WsYMhU9lGVyXJCti_e-DRSAPDc7tffXtoTZhOR5vgIR2TkIkAoRqRcT/s400/EL+ARCO.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic6TaXMcAiq7EjESfhoNYLmyrD-tlsQ5o7QB_hiL5fY4kZn7jWwqdQ2583M0T5aveCLd1I0cP3qwWjvwKsqCvozgfjfwH9jHrqqqyYPIQ1j8-kIEHqUEfCpfyhnDOX2RO5Ru-Go58-nYrG/s400/HUANTA-DESFILE.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXLh6fClvbp8VbGIDfyQQphhTEVUzmaA_n70cAFD0SL_U_wVl84B14YhOPYMFqSSlny1eXxi_3LlHN6SB0hmJwJC8FgohEdCj_5rHFsjfQsR6ojJ-bfqwMJ83pHfp-QLMyQMIFkCcT6FWu/s400/HUANTA-REINADO.jpg" alt="Descripción de la imagen 5">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCa2OV3FOAgfZSeZvC-z_GQ-Mu3UbuMiSa4Z9rrtVia25ZYJ39eD42EvEjf6zivSk2l6PILEcKFV-yAtxOt1xHAlModigsg-sh15sfsjha1Ray1xkIy7-0E8G1rk17CXh48ID0_A7Xqked/s400/Foto+128+Personajes.jpg" alt="Descripción de la imagen 5">
+                <figure>
+                    <img src="https://2.bp.blogspot.com/_urIjHimdebs/TCt8xasP00I/AAAAAAAAAGQ/Jk2UvDUHJH0/s1600/Mercado+de+Huamanga.jpg" alt="Paquetes Turísticos en Ayacucho">
+                    <figcaption>Mercado Santa Clara</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://scontent.fjau2-1.fna.fbcdn.net/v/t1.6435-9/117968120_190203765955385_5685352616202756234_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=nhbGrxRZXFwQ7kNvgFe0VoO&_nc_ht=scontent.fjau2-1.fna&oh=00_AYCklbXwlMkgmHl9qq4p0S8_bozWVqUH2FvTiisqT0xHJg&oe=6689CAEA" alt="Paquetes Turísticos en Ayacucho">
+                    <figcaption>Convento de Santa Teresa en Ayacucho</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://4.bp.blogspot.com/_urIjHimdebs/TCt9UaztlCI/AAAAAAAAAGY/NQTVv9u8Syk/s1600/Iglesia+San+Cristobal+o+iglesia+de+Santa+Ana+1940.jpg" alt="Paquetes Turísticos en Ayacucho">
+                    <figcaption>Iglesia de Santa Ana</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhNHHjjkt4D5lHLR-Me7TkegZExAxFpFN3w&s" alt="Paquetes Turísticos en Ayacucho">
+                    <figcaption>Puentes Benavides</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://4.bp.blogspot.com/_urIjHimdebs/TCvLuxMXjNI/AAAAAAAAAGo/NFGl0DkVM48/s1600/Alameda.jpg" alt="Paquetes Turísticos en Ayacucho">
+                    <figcaption>Rio Alameda</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://scontent.fjau2-1.fna.fbcdn.net/v/t1.6435-9/117918151_190202552622173_22410238348113366_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=BKvB-2SGAW0Q7kNvgFZkQfV&_nc_ht=scontent.fjau2-1.fna&oh=00_AYCpgjZUepzcE9zJWjOjoWDjj80ag0p6oswO0whUTKG0Tg&oe=6689D815" alt="Paquetes Turísticos en Ayacucho">
+                    <figcaption>La Plaza de Ayacucho</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxzOKVL-FsJ4e5FHvGlUW_1cJ2uOB4BOWduA&s" alt="Paquetes Turísticos en Ayacucho">
+                    <figcaption>Feria de Ganados</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://i.pinimg.com/originals/f0/95/21/f095213561817f7cfa59c7f4e009de6e.jpg" alt="Paquetes Turísticos en Ayacucho">
+                    <figcaption>Plaza de Alameda</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0SE1_zpq_NaJFDditLR-rafLlDzwGHhduRA&s" alt="Paquetes Turísticos en Ayacucho">
+                    <figcaption>Alameda de la Independencia</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://1.bp.blogspot.com/-0fZZP-Uw0vk/UGMSrP9HEKI/AAAAAAAAAE4/8PeeMyK-R94/s1600/533465_297565513651371_1686475896_n.jpg" alt="Paquetes Turísticos en Ayacucho">
+                    <figcaption>Paquetes Turísticos en Ayacucho</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://storage.canalblog.com/02/06/76877/25688103.jpg" alt="Paquetes Turísticos en Ayacucho">
+                    <figcaption>Frontis principal del Mercado Central de la cuidad "año 1930 aprox"..</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://scontent.fjau2-1.fna.fbcdn.net/v/t1.6435-9/118521282_190202602622168_4385834529961256826_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=OxxJtGwp5VYQ7kNvgHy7sx8&_nc_ht=scontent.fjau2-1.fna&oh=00_AYBzR92YM6uA4vZTeOKFaAyHXatJmPT35jh0fZ7TzA1lzQ&oe=6689EAB0" alt="Paquetes Turísticos en Ayacucho">
+                    <figcaption>Carcel Pública de Ayacucho</figcaption>
+                </figure>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>Derechos de autor © 2024 - Ayacucho: Historia, Geografía y Naturaleza</p>
-    </footer>
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <script>
+        var timeline_json = {
+            "title": {
+                "media": {
+                    "url": "https://www.shutterstock.com/image-photo/ayacucho-peru-beautiful-view-main-600nw-1450048556.jpg",
+                    "caption": "",
+                    "credit": ""
+                },
+                "text": {
+                    "headline": "Historia de Ayacucho",
+                    "text": "<p>La palabra Ayacucho proviene de 2 voces quechuas 'aya' (alma) y 'cuchu' (rincón o morada) por los restos humanos encontrados en este lugar.</p>"
+                }
+            },
+            "events": [
+                {
+                    "media": {
+                        "url": "https://kchimbosmblog.wordpress.com/wp-content/uploads/2017/04/comunidad-primitiva.jpg?w=300",
+                        "caption": "Primeros habitantes en Ayacucho",
+                        "credit": "Kchimbosm Blog"
+                    },
+                    "start_date": {
+                        "year": "20000",
+                        "month": "1",
+                        "day": "1"
+                    },
+                    "text": {
+                        "headline": "20,000 A.C.",
+                        "text": "<p>Primeros habitantes en Ayacucho, evidenciados por los restos encontrados en la cueva de Pikimachay.En la cueva de Pikimachay (12 km al norte de la ciudad de Ayacucho) se encontraron restos líticos, y óseos con una antigüedad de 12,000 años a.C. y pertenecen a la fase Ayacucho en la periodificación realizada por Mc Neish.</p>"
+                    }
+                },
+                {
+                    "media": {
+                        "url": "https://culturasperuanas.com/wp-content/uploads/2023/02/complejo-wari.jpg",
+                        "caption": "Imperio Wari",
+                        "credit": "Culturas Peruanas"
+                    },
+                    "start_date": {
+                        "year": "500",
+                        "month": "1",
+                        "day": "1"
+                    },
+                    "end_date": {
+                        "year": "1100",
+                        "month": "1",
+                        "day": "1"
+                    },
+                    "text": {
+                        "headline": "500-1100 D.C.",
+                        "text": "<p>Surgimiento del Imperio Wari, centro político administrativo de la región.La cultura wari floreció en la costa y tierras altas del antiguo Perú entre el 450 y 1000 d.C. Centrada en su capital Huari, los wari explotaron con éxito las diversas rutas que controlaron para construir un imperio administrado por capitales provinciales conectadas por una larga red de caminos.</p>"
+                    }
+                },
+                {
+                    "media": {
+                        "url": "https://huancaraylla.com.pe/wp-content/uploads/2022/05/vilcashuaman-1.jpg",
+                        "caption": "Vilcashuamán",
+                        "credit": "Huancaraylla"
+                    },
+                    "start_date": {
+                        "year": "1400",
+                        "month": "1",
+                        "day": "1"
+                    },
+                    "text": {
+                        "headline": "Siglo XV",
+                        "text": "<p>Ocupación incaica de Ayacucho, establecimiento de Vilcashuamán.Vilcashuamán fue un centro administrativo de los Incas, establecido luego de que estos conquistaran a los chancas y a los pocras. Según los cronistas, Vilcashuamán debió albergar a unas 40.000 personas.</p>"
+                    }
+                },
+                {
+                    "media": {
+                        "url": "https://university.marxist.com/images/imu22/talks/conquest.jpg",
+                        "caption": "Conquista Española",
+                        "credit": "Marxist University"
+                    },
+                    "start_date": {
+                        "year": "1532",
+                        "month": "1",
+                        "day": "1"
+                    },
+                    "text": {
+                        "headline": "1532",
+                        "text": "<p>Llegada de los españoles y comienzo de la guerra contra los incas.Los incas estuvieron a punto de exterminar a los conquistadores en 1536, cuando se rebelaron bajo el liderazgo de Manco Inca, hermano de Atahualpa y de Huáscar.</p>"
+                    }
+                },
+                {
+                    "media": {
+                        "url": "https://assets.isu.pub/document-structure/230426165429-441783913d7b36a694144ea43167fff2/v1/b60b922f2a274fe71a2de9434a29e10d.jpeg",
+                        "caption": "Fundación de Huamanga",
+                        "credit": "ISU"
+                    },
+                    "start_date": {
+                        "year": "1540",
+                        "month": "4",
+                        "day": "25"
+                    },
+                    "text": {
+                        "headline": "1540",
+                        "text": "<p>Fundación de la ciudad de San Juan de la Frontera de Huamanga por Francisco Pizarro.La ciudad de Huamanga, cuyas raíces nacen de la cultura Wari, fue fundada el 25 de abril del año 1540 por Francisco Pizarro con el nombre de San Juan de la frontera de Huamanga, que posteriormente formó parte del virreinato del Perú.</p>"
+                    }
+                },
+                {
+                    "media": {
+                        "url": "https://postalmuseum.si.edu/sites/default/files/exhibitions/npm-1999_2004_47.jpg",
+                        "caption": "Declaración de Independencia",
+                        "credit": "Postal Museum"
+                    },
+                    "start_date": {
+                        "year": "1820",
+                        "month": "11",
+                        "day": "1"
+                    },
+                    "text": {
+                        "headline": "1820",
+                        "text": "<p>Declaración de independencia en Huamanga por el General Álvarez de Arenales.Cada primero de noviembre se conmemora la proclamación de la independencia de Huamanga, realizado el año 1820 por el general Alvares de Arenales, con presencia del Pleno del Cabildo, los bravos morochucos, vecinos notables y población en general.</p>"
+                    }
+                },
+                {
+                    "media": {
+                        "url": "https://elperuano.pe/fotografia//thumbnail/2021/12/09/000141911M.jpg",
+                        "caption": "Batalla de Ayacucho",
+                        "credit": "El Peruano"
+                    },
+                    "start_date": {
+                        "year": "1824",
+                        "month": "12",
+                        "day": "9"
+                    },
+                    "text": {
+                        "headline": "1824",
+                        "text": "<p>Batalla de Ayacucho, consolidación de la independencia del Perú y América.El 9 de diciembre de 1824, se libró la Batalla de Ayacucho, donde el Ejército Unido Libertador del Perú, al mando de Antonio José de Sucre, consiguió una victoria que selló la gesta emancipadora de Perú y el continente americano.</p>"
+                    }
+                }
+            ]
+        };
+        window.timeline = new TL.Timeline('timeline-embed', timeline_json);
+    </script>
+
+<script>
+    $(document).ready(function(){
+        // Verifica si el DOM está listo
+        console.log("DOM está listo");
+
+        // Event listener para abrir el modal
+        $('.click_enlace').on('click', function(){
+            $('#myModal2').modal('show');
+        });
+    });
+</script>
+
 </body>
 </html>

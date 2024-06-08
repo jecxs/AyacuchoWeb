@@ -1,77 +1,491 @@
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f2f2f2;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-header {
-    position: relative; /* Añadido para que la posición de los elementos sea relativa al encabezado */
-    background-color: #333;
-    color: #fff;
-    padding: 120px; /* Aumenta el padding para hacer el encabezado más grande */
+
+.banner{
+    width: 100%;
+    height: 800px;
+    animation: banner 10s infinite linear alternate;
+    background-size: 100% 100%;
+    position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start; /* Alinea los elementos hacia el inicio del encabezado */
-    background-image: url('https://etnias.pe/wp-content/uploads/2022/06/Adios-pueblo-de-Ayacucho_historia_Ernesto-Camassi.jpg'); /* Cambiar 'tu_imagen_fondo_transparente.png' a tu imagen de fondo transparente */
-    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el encabezado */
-    background-position: center center; /* Ajusta la posición de la imagen de fondo */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+}
+@keyframes banner{
+    0%, 20%{
+        background-image: url("/AyacuchoWeb/assets/img/portfolio/fullsize/Museoss.jpg");
+    }
+    25%, 45%{
+        background-image: url("/AyacuchoWeb/assets/img/portfolio/fullsize/santoDomingo.jpg");
+    }
+    50%, 70%{
+        background-image: url("/AyacuchoWeb/assets/img/portfolio/fullsize/AyacuchoFotografias.jpg");
+    }
+    75%, 100%{
+        background-image: url("/AyacuchoWeb/assets/img/portfolio/fullsize/triunfoAyacucho.webp");
+    }
 }
 
-header h1 {
-    margin: 0;
-    font-size: 48px; /* Aumenta el tamaño del título "Ayacucho" */
+
+.capa{
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    left: 20px; /* Ajusta la distancia desde el borde izquierdo */
-    transform: translateY(-50%); /* Centra verticalmente el título */
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+.info{
+    z-index: 1;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+
 }
 
-main {
-    padding: 20px;
-}
-
-section {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+.info h1{
+    color: #fff;
+    font-size: 45px;
     margin-bottom: 20px;
-    text-align: left;
-    position: relative; /* Añadido para que la posición de la imagen sea relativa al contenedor */
+    letter-spacing: 1px;
+}
+.info p{
+    color: #c7c7c7;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.info a{
+    color: #fff;
+    text-decoration: none;
+    background: #3088e0;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50px;
+    width: 150px;
 }
 
-section img {
-    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+
+
+
+
+
+
+
+/* Variables de CSS para facilitar ajustes */
+:root {
+    --container-margin-bottom: 20px;
+    --card-margin: 15px;
+    --card-padding: 20px;
+    --image-width: 100%;
+    --image-height: auto;
+    --fade-duration: 2s;
+    --fade-timing-function: ease-in;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --card-radius: 10px;
+    --timeline-margin-bottom: 40px; /* Añade esta variable */
+}
+
+/* Contenedor para la línea de tiempo */
+#timeline-embed {
+    margin-bottom: var(--timeline-margin-bottom); /* Añade espacio debajo de la línea de tiempo */
+}
+
+/* Contenedor de las tarjetas */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: var(--container-margin-bottom);
+}
+
+/* Estilo de cada tarjeta */
+.card {
+    background: #fff;
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+    margin: var(--card-margin);
+    overflow: hidden;
+    flex: 1 1 calc(33% - 2 * var(--card-margin));
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: var(--image-width);
+    height: var(--image-height);
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+
+}
+
+.card-content {
+    padding: var(--card-padding);
+}
+
+.card h2, .card h3 {
+    font-size: 1.25em;
+    margin: 0 0 10px;
+}
+
+.card p {
+    margin: 0 0 10px;
+}
+
+/* Efecto de desvanecimiento */
+.fade-in {
+    animation: fadeIn var(--fade-duration) var(--fade-timing-function);
+}
+
+/* Keyframes para la animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries para una mejor adaptabilidad en dispositivos móviles */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+    /* Variables de CSS para facilitar ajustes */
+:root {
+    --container-margin-bottom: 20px;
+    --text-section-margin-right: 20px;
+    --image-width: 300px;
+    --image-height: 200px;
+    --fade-duration: 2s;
+    --fade-timing-function: ease-in;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: var(--container-margin-bottom); /* Espacio entre secciones */
+    flex-wrap: wrap; /* Permite que el contenido se ajuste en pantallas pequeñas */
+}
+
+/* Sección de texto */
+.text-section {
+    flex: 1;
+    margin-right: var(--text-section-margin-right);
+    min-width: 280px; /* Asegura que la sección de texto tenga un ancho mínimo */
+}
+
+/* Sección de imagen */
+.image-section {
+    flex: 1;
+    text-align: right;
+    min-width: 280px; /* Asegura que la sección de imagen tenga un ancho mínimo */
+}
+
+/* Imagenes ajustables */
+.image-section img {
+    max-width: 100%; /* La imagen ocupará el 100% del contenedor padre */
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: var(--image-width); /* Ajusta el ancho específico de la imagen */
+    height: var(--image-height); /* Ajusta la altura específica de la imagen */
     border-radius: 10px; /* Añade bordes redondeados a la imagen */
-    margin-bottom: 10px; /* Añade margen inferior para separar las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil a la imagen */
 }
 
-/* Estilos para el álbum de imágenes */
+/* Efecto de desvanecimiento */
+.fade-in {
+    animation: fadeIn var(--fade-duration) var(--fade-timing-function);
+}
+
+/* Keyframes para la animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries para una mejor adaptabilidad en dispositivos móviles */
+@media (max-width: 768px) {
+    .text-section {
+        margin-right: 0;
+        margin-bottom: var(--container-margin-bottom);
+    }
+
+    .image-section {
+        text-align: center; /* Centra la imagen en pantallas pequeñas */
+    }
+
+    .image-section img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible en pantallas pequeñas */
+        height: auto;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0px;
+}
+h2, h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+}
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.album {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+.album img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.album img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.album figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.album figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.album figure:hover figcaption {
+    opacity: 1;
+}
+#timeline-embed {
+    width: 100%;
+    height: 600px;
+}
+
+/* Galeria de imagenes */
 .album {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 10px;
+    margin: 0px 40px;
+    height: 400px;
 }
-
+.album figure {
+    width: calc(33.333% - 10px);
+    cursor: pointer;
+}
 .album img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin: 10px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
 }
-
-.album img:hover {
-    transform: scale(1.1);
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
 }
-
-footer {
-    background-color: #333;
-    color: #fff;
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 700px;
+}
+.modal img {
+    width: 100%;
+    height: auto;
+}
+.modal-caption {
+    margin: 15px 0;
+    color: #ccc;
     text-align: center;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Modales */
+
+.historia-container {
+    background-color: rgba(246, 246, 246, 0.45);
     padding: 10px;
+    margin: 20px 0;
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.historia-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 4px 5px 4px rgb(254, 254, 255);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: oblique;
+    color: rgb(39, 32, 62);
+}
+
+.musicas-tocadas-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 5px 0;
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+}
+
+.musica-item {
+    margin-bottom: 40px;
+    width: calc(20% - 50px);
+    box-sizing: border-box;
+}
+
+.duo-ayacucho-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.img-duo-ayacucho {
+    width: 400px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 0;
+    box-shadow: 9px 14px rgba(110, 105, 105, 0.48);
+    border: 4px solid rgba(186, 158, 17, 0);
+    transition: transform 0.1s;
+}
+
+.img-duo-ayacucho:hover {
+    transform: scale(1.15);
+}
+
+.click_enlace {
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    color: orangered;
+    text-align: center;
+}
+
+/* Estilos para los modales */
+.modal-content {
+    background-color: #f8f9fa;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+}
+
+.modal-text {
+    padding: 20px;
+    text-align: justify;
+    color: #666;
+    line-height: 1.6;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+}
+.contenedor-modal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual tamaño */
+    grid-gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Espacio dentro del contenedor */
 }
