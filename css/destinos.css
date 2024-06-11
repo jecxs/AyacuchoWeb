@@ -5,12 +5,18 @@ html, body {
     margin: 10px 0.5%;
     padding: 0;
     font-family: "Playfair Display", serif;
+    margin: 0;
 }
+.title__p{
+    font-family: "Cinzel", serif;
+
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f0f0f0;
+    background: #ffffff !important;
 }
 
 /* Estilos de la barra de navegación */
@@ -197,15 +203,11 @@ html {
   color: #fff;
   text-decoration: none;
   background: #3088e0;
-  padding: 16px 37px;
+  padding: 16px 50px;
   display: inline-block;
   border-radius: 50px;
-
-
+    font-family: "LXGW WenKai TC", cursive;
 }
-
-
-
 
 
 /* Estilo del contenedor */
@@ -250,7 +252,7 @@ html {
 /* Estilos para la sección de tipos */
 .historia-container {
     padding: 60px;
-    background-color: #fff;
+    background: #19242d !important;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -263,19 +265,97 @@ html {
     color: rgba(239, 47, 80, 0.64);
 
 }
+.modal-description{
+    text-align: justify;
+    margin-bottom: 25px !important ;
+}
 
-/* Estilos para la sección de elementos */
+/* Estilos para las tarjetas de música */
 .musicas-tocadas-container {
-    background-color: #fff;
-    padding: 20px;
-    margin: 1px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 120px;
+    background-color: rgb(61, 78, 81);
 }
+
+.musica-item {
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.musica-item:hover {
+    transform: translateY(-5px);
+}
+
+.click_enlace {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.img-duo-ayacucho {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-duo-ayacucho:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.musica-item h1{
+    color: white !important;
+}
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-body img{
+object-fit: contain;
+    height: 500px !important;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 .musica-item {
     margin-bottom: 40px;
@@ -11723,7 +11803,7 @@ header.masthead p {
 }
 .video__cont{
   height: 250px;
-  width: 98 vw;
+  width: 98vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12026,4 +12106,67 @@ header.masthead p {
     position: relative;
   }
 }
+.travel-services {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
 
+.travel-services h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    background-color: #e18b29;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.travel-services-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.travel-service {
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    flex: 0 0 250px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.travel-service img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.travel-service h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #007bff;
+}
+
+.travel-service p {
+    font-size: 16px;
+    color: #555;
+}
+
+.travel-service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tour_title {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-size: 32px !important;
+    padding: 40px;
+    font-weight: bold;
+    color: #ff4500;
+}

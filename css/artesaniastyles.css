@@ -12,7 +12,7 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f0f0f0;
+  background: #19242d !important;
 }
 
 /* Estilos de la barra de navegación */
@@ -221,7 +221,7 @@ section.visible {
 }
 /* Estilos para la sección de tipos */
 .historia-container {
-  background-color: rgba(246, 246, 246, 0.45);
+  background-color: rgb(255, 255, 255);
   padding: 10px;
   margin: 20px 0;
   border-radius: 0;
@@ -230,7 +230,7 @@ section.visible {
 }
 
 .historia-title {
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Dancing Script", cursive;
   text-shadow: 4px 5px 4px rgb(254, 254, 255);
   font-weight: 400;
@@ -241,7 +241,7 @@ section.visible {
 }
 
 .musicas-tocadas-container {
-  background-color: #fff;
+  background-color: #19242d;
   padding: 20px;
   margin: 5px 0;
   border-radius: 0;
